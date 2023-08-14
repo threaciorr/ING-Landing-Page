@@ -200,7 +200,7 @@
     width: 200px;
 }
 .newsletter-text {
-    padding-left: 10px;
+    padding-left: 15px;
     color: #333;
 }
 .newsletter-text h1 {
@@ -283,6 +283,16 @@
 }
 .active__newsletter-message  {
     display: block;
+}
+@media (max-width: 600px) {
+    .newsletter__container {
+        max-width: 791px;
+        flex-direction: column;
+    }
+    .newsletter-text {
+        padding-left: 0px;
+        text-align: center;
+    }
 }
 /*--------------KONTO__SECTION--------------*/
 .konto {
