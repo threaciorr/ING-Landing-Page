@@ -4,23 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <title>Document</title>
 </head>
 <body>
   <div id="root">
+
+    <!--Start Logo-->
     <section class="logo">
       <div class="logo__container">
         <img src="./assets/logo.svg" alt="ing__logo">
       </div>
     </section>
+    <!--End Logo-->
+
+    <!--Start Home-->
     <section class="home">
       <div class="home__container">
         <div class="home__text-orange">Czarno na białym:</div>
         <div class="home__text-orange">bankowość</div>
         <div class="home__text-orange">ma być prosta</div>
-        <div class="home__text-purple">A 300zł na dzień dobry</div>
+        <a href="https://forms.ing.pl/DETeWniosekWormsExt/wizardwfb.aspx?path=T1_DB-EndUserwormsext-S7-OTW_RACH_KI_DIR&FieldString23=M&LINE=01000492_na_pl_2023_rtl_accounts_display-video_kiror_kdongoingmobi&utm_campaign=01000492_na_pl_2023_rtl_accounts_display-video_kiror_kdongoingmobi&url_channel=poe&utm_medium=poe&COMMUNICATION=300prostyjezykbuldogi-mobi&utm_content=300prostyjezykbuldogi-mobi&FORMAT=1200x628-native&utm_term=1200x628-native&PUBLISHER=GDN-Prospecting-Programmatic-OE&utm_source=GDN-Prospecting-Programmatic-OE&PARTNER=lowe&ADID=563320810&AFFID=7854484&EPI=&tduid=&FROM=https%3a%2f%2fwww.ing.pl%2flp%2fproste-konto2&bankId=6&profileId=4&c=1" class="home__text-purple">A 300zł na dzień dobry</a>
       </div>
     </section>
+    <!--End Home-->
+
+    <!--Start Newsletter-->
     <section class="newsletter">
       <div class="newsletter__container">
         <div class="newsletter-img">
@@ -32,12 +41,45 @@
           <a href="#">Spokojnie! Powiemy Ci jakie</a>
         </div>
       </div>
-    </section>
-    <section class="konto">
-      <div class="konto__container">
-        <button>Zaluz konto online</button>
+
+      <div class="newsletter-message">
+        <div class="newsletter-message__container">
+          <div class="newsletter-message__close">
+            <i class='bx bx-x'></i>
+          </div>
+          <h1>Jak zgarnąć do 300 zł?</h1>
+          <p>Zyskasz 120 zł, jeśli:</p>
+          <ul>
+            <li>założysz konto Mobi z kontem oszczędnościowym i kartą do konta,</li>
+            <li>zrobisz min. 10 transakcji bezgotówkowych</li>
+          </ul>
+          <p>oraz dodatkowo 130 zł, jeśli:</p>
+          <ul>
+            <li>z wymienionych 10 transakcji bezgotówkowych, min. 3 zrobisz BLIKIEM w internecie,</li>
+            <li>założysz Smart Savera, na którym odłożysz min. 30 zł.</li>
+          </ul>
+          <p>Teraz możesz zgarnąć jeszcze 50 zł, jeśli:</p>
+          <ul>
+            <li>podczas zakładania konta Mobi podasz kod promocji od znajomego, który ma u nas konto osobiste,</li>
+            <li>zrobisz transakcje bezgotówkowe na min. 300 zł w dwóch dowolnych miesiącach kalendarzowych promocji.</li>
+          </ul>
+          <span>Zapoznaj się z regulaminami promocji <a href="https://www.ing.pl/_fileserver/item/rti6ykw">„Do 250 zł za otwarcie konta Mobi"</a> i <a href="https://www.ing.pl/_fileserver/item/ra0nkw8">„Poleć konto znajomemu”</a> oraz spełnij wszystkie warunki.</span>
+          <p>Powyższe promocje łączą się, więc jeśli spełnisz warunki jednej zaliczają się one również do drugiej.</p>
+          <span>Upewnij się, że w dniu przystąpienia do promocji masz udzielone zgody marketingowe – zrobisz to w Moim ING.</span>
+        </div>
       </div>
     </section>
+    <!--End Newsletter-->
+
+    <!--Start Konto-->
+    <section class="konto">
+      <div class="konto__container">
+        <a href="https://forms.ing.pl/DETeWniosekWormsExt/wizardwfb.aspx?path=T1_DB-EndUserwormsext-S7-OTW_RACH_KI_DIR&FieldString23=M&LINE=01000492_na_pl_2023_rtl_accounts_display-video_kiror_kdongoingmobi&utm_campaign=01000492_na_pl_2023_rtl_accounts_display-video_kiror_kdongoingmobi&url_channel=poe&utm_medium=poe&COMMUNICATION=300prostyjezykbuldogi-mobi&utm_content=300prostyjezykbuldogi-mobi&FORMAT=1200x628-native&utm_term=1200x628-native&PUBLISHER=GDN-Prospecting-Programmatic-OE&utm_source=GDN-Prospecting-Programmatic-OE&PARTNER=lowe&ADID=563320810&AFFID=7854484&EPI=&tduid=&FROM=https%3a%2f%2fwww.ing.pl%2flp%2fproste-konto2&bankId=6&profileId=4&c=1">Zaluz konto online</a>
+      </div>
+    </section>
+    <!--End Konto-->
+
   </div>
+  <script type="module" src="script.js"></script>
 </body>
 </html>
