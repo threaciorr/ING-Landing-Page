@@ -53,6 +53,7 @@
     background-position: center;
     background-size: cover;
     border-radius: 0 0 15px 15px;
+    position: relative;
 }
 .home__text-orange:nth-child(1) {
     margin-left: 50px;
@@ -91,6 +92,84 @@
 }
 .home__text-purple:hover {
     box-shadow: 0 1px 15px 0 rgba(0,0,0,0.28);
+}
+@media (max-width: 960px) {
+    .home__text-orange {
+        padding: 2px 12px;
+        font-size: 26px;
+    }
+    .home__text-orange:nth-child(1) {
+        margin-left: 25px;
+    }
+    .home__text-orange:nth-child(2) { 
+        margin-top: 5px;
+        margin-left: 75px;
+    }
+    .home__text-orange:nth-child(3) {
+        margin-top: 5px;
+        margin-left: 45px;
+    }
+    .home__text-purple {
+        padding: 8px 12px;
+        font-size: 19px;
+        margin-top: 55px;
+        margin-left: 35px;
+    }
+    .home__container {
+        max-width: 1232px;
+        padding: 50px 0 50px;
+    }
+}
+@media (max-width: 600px) {
+    .home__text-orange {
+        padding: 4px 16px;
+        font-size: 28px;
+        line-height: 1.25;
+    }
+    .home__text-orange:nth-child(1) {
+        position: absolute;
+        top: 200px;
+        left: -10px;
+    }
+    .home__text-orange:nth-child(2) {
+        position: absolute; 
+        top: 243px;
+        left: -60px;
+    }
+    .home__text-orange:nth-child(3) {
+        position: absolute;
+        top: 291px;
+        left: -30px;
+    }
+    .home__text-purple {
+        position: absolute;
+        top: 320px;
+        left: -20px;
+        padding: 8px 12px;
+        font-size: 19px;
+    }
+    .home__container {
+        height: 225px;
+        margin-bottom: 230px;
+    }
+}
+@media (max-width: 400px) {
+    .home__text-orange {
+        font-size: 24px;
+    }
+    .home__text-orange:nth-child(1) {
+        top: 200px;
+    }
+    .home__text-orange:nth-child(2) {
+        top: 235px;
+    }
+    .home__text-orange:nth-child(3) {
+        top: 275px;
+    }
+    .home__text-purple {
+        font-size: 19px;
+        top: 310px;
+    }
 }
 /*--------------NEWSLETTER__SECTION--------------*/
 .newsletter {
