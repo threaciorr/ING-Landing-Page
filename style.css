@@ -23,6 +23,22 @@
     margin: 0 auto;
     height: 200vh;
 }
+a {
+    color: #AB0066;
+}
+.button {
+    padding: 12px 16px;
+    font-size: 19px;
+    color: #fff;
+    background-color: #FF6200;
+    border: 0;
+    border-radius: 8px;
+    font-weight: bold;
+    margin: 20px;
+    transition: all 250ms cubic-bezier(0.55, 0, 0.1, 1) 0s;
+    cursor: pointer;
+    text-decoration: none;
+}
 /*--------------LOGO__SECTION--------------*/
 .logo {
     width: 100%;
@@ -309,20 +325,67 @@
     align-items: center;
     border-bottom: 1px solid rgba(0, 0, 0, 0.085);
 }
-.konto__container a {
-    padding: 12px 16px;
-    font-size: 19px;
-    color: #fff;
-    background-color: #FF6200;
-    border: 0;
-    border-radius: 8px;
-    font-weight: bold;
-    margin: 20px;
-    transition: all 250ms cubic-bezier(0.55, 0, 0.1, 1) 0s;
-    cursor: pointer;
-    text-decoration: none;
-}
 .konto__container a:hover {
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.467);
 }
 /*--------------CO__ZNACZY__PROSTO--------------*/
+.prosto {
+    width: 100%;
+    max-width: 791px;
+    margin: 0 auto;
+}
+.prosto h1 {
+    text-align: center; 
+    padding: 20px 0; 
+    font-size: 32px;
+}
+.prosto__column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 194px;
+    padding: 32px 0 0;
+}
+.prosto__column-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.prosto__column-text p {
+    line-height: 24px;
+}
+
+@media (max-width: 600px) {
+    .prosto__column {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding: 24px 16px;
+    }
+}
+/*--------------APLIKACJA--------------*/
+.app {
+    width: 100%;
+    padding: 48px 16px;
+    text-align: center;
+}
+.app h3 {
+    
+}
+.app p {
+    
+}
+.app-imgs {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-bottom: 16px;
+}
+@media (max-width: 360px) {
+    .app-imgs {
+        display: inline-block;
+        padding-bottom: 16px;
+    }
+}
