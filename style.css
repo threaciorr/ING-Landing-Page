@@ -365,7 +365,7 @@ a {
         padding: 24px 16px;
     }
 }
-/*--------------APLIKACJA--------------*/
+/*--------------APLIKACJE--------------*/
 .app {
     width: 100%;
     padding: 48px 16px;
@@ -387,5 +387,108 @@ a {
     .app-imgs {
         display: inline-block;
         padding-bottom: 16px;
+    }
+}
+/*--------------SLIDER--------------*/
+.slider {
+    width: 100%;
+    text-align: center;
+}
+.slider p {
+    font-size: 24px;
+    color: #333;
+    padding-bottom: 16px;
+}
+.wrapper {
+    padding: 16px 0 32px;
+    width: 100%;
+    max-width: 1503px;
+    margin: 0 auto;
+    position: relative;
+}
+.wrapper .carousel {
+    display: flex;
+    font-size: 0px;
+    overflow: hidden;
+    cursor: pointer;
+    scroll-behavior: smooth;
+}
+
+.carousel .card {
+    border-left: 1px solid rgb(195, 195, 195); 
+    text-align: center; 
+    background-color: #fff;
+}
+.carousel .card:first-child {
+    margin-left: -1px;
+}
+.carousel .card h1 {
+    color: #000;
+    font-size: 20px;
+    margin: 10px 0;
+}
+.carousel .card img {
+    width: 500px;
+    height: 120px;
+    object-fit: contain;
+    margin: 0 0 13px;
+}
+.carousel .card p {
+    font-size: 16px;
+    color: #303030;
+    padding: 0;
+    line-height: 24px;
+}
+.carousel .card a {
+    font-size: 16px;
+    padding: 0 0 16px;
+    display: inline-block;
+    line-height: 24px;
+}
+
+.wrapper i {
+    font-size: 50px;
+    color: #dc0000;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.wrapper i:first-child{left: -35px; color: #626262;}
+.wrapper i:last-child{right: -35px;}
+
+.carousel.dragging {
+    cursor: grab;
+    scroll-behavior: auto;
+}
+
+@media (max-width: 1600px) {
+    .wrapper {
+        max-width: 1002px;
+        position: relative;
+    }
+}
+@media (max-width: 1100px) {
+    .wrapper {
+        max-width: 501px;
+        position: relative;
+    }
+}
+@media (max-width: 600px) {
+    .wrapper {
+        max-width: 301px;
+        position: relative;
+    }
+    .carousel .card img {
+        width: 300px;
+    }
+}
+@media (max-width: 400px) {
+    .wrapper {
+        max-width: 201px;
+        position: relative;
+    }
+    .carousel .card img {
+        width: 200px;
     }
 }
