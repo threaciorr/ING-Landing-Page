@@ -19,8 +19,8 @@ arrowIcons = document.querySelectorAll(".wrapper i");
 let isDragStart = false, isDragging = false, prevPageX, prevScrollLeft, positionDiff;
 const showHideIcons = () => {
     let scrollWidth = carousel.scrollWidth - carousel.clientWidth; 
-    arrowIcons[0].style.color = carousel.scrollLeft == 0 ? "#626262" : "#dc0000";
-    arrowIcons[1].style.color = carousel.scrollLeft == scrollWidth ? "#626262" : "#dc0000";
+    arrowIcons[0].style.color = carousel.scrollLeft == 0 ? "#d9d9d9" : "#FF6200";
+    arrowIcons[1].style.color = carousel.scrollLeft == scrollWidth ? "#d9d9d9" : "#FF6200";
 }
 arrowIcons.forEach(icon => {
     icon.addEventListener("click", () => {

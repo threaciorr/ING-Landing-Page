@@ -371,12 +371,6 @@ a {
     padding: 48px 16px;
     text-align: center;
 }
-.app h3 {
-    
-}
-.app p {
-    
-}
 .app-imgs {
     display: flex;
     justify-content: center;
@@ -397,7 +391,7 @@ a {
 .slider p {
     font-size: 24px;
     color: #333;
-    padding-bottom: 16px;
+    padding: 0 16px 16px;
 }
 .wrapper {
     padding: 16px 0 32px;
@@ -415,12 +409,9 @@ a {
 }
 
 .carousel .card {
-    border-left: 1px solid rgb(195, 195, 195); 
+    border-right: 1px solid #d9d9d9; 
     text-align: center; 
     background-color: #fff;
-}
-.carousel .card:first-child {
-    margin-left: -1px;
 }
 .carousel .card h1 {
     color: #000;
@@ -435,7 +426,7 @@ a {
 }
 .carousel .card p {
     font-size: 16px;
-    color: #303030;
+    color: #333;
     padding: 0;
     line-height: 24px;
 }
@@ -448,13 +439,13 @@ a {
 
 .wrapper i {
     font-size: 50px;
-    color: #dc0000;
+    color: #FF6200;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
 }
-.wrapper i:first-child{left: -35px; color: #626262;}
+.wrapper i:first-child{left: -35px; color: #d9d9d9;}
 .wrapper i:last-child{right: -35px;}
 
 .carousel.dragging {
