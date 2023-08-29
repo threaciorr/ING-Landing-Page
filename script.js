@@ -1,4 +1,6 @@
+
 //Message----------------->
+
 const newsletterMessageShow = document.querySelector('.newsletter__container'),
 newsletterMessage = document.querySelector('.newsletter-message'),
 newsletterMessageClose = document.querySelector('.newsletter-message__close');
@@ -70,3 +72,5 @@ document.addEventListener("mousemove", dragging);
 carousel.addEventListener("touchmove", dragging);
 document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("touchend", dragStop);
+
+//Expand----------------->
