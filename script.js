@@ -74,3 +74,24 @@ document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("touchend", dragStop);
 
 //Expand----------------->
+
+const RozwinBtn = document.querySelector('.expand_section-rozwin'),
+ZwinBtn = document.querySelector('.expand_section-zwin'),
+ShowSection = document.querySelector('.expand_section'),
+ShowText = document.querySelector('.expand_section ul');
+
+ZwinBtn.classList.add('expand_section-hide');
+ShowSection.classList.add('expand_section-disappear');
+ShowText.classList.add('.text-disappear');
+
+RozwinBtn.addEventListener('click', () => {
+    RozwinBtn.classList.add('expand_section-hide');
+    ZwinBtn.classList.remove('expand_section-hide');
+    ShowSection.classList.remove('expand_section-disappear');
+    ShowText.classList.remove('.text-disappear');
+});
+ZwinBtn.addEventListener('click', () => {
+    RozwinBtn.classList.remove('expand_section-hide');
+    ZwinBtn.classList.add('expand_section-hide');
+    ShowSection.classList.add('expand_section-disappear');
+});
